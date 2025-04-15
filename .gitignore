@@ -2,3 +2,4 @@
 /.parcel-cache/
 /dev/
 /prod/
+node_modules
