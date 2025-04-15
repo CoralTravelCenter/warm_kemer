@@ -1,0 +1,114 @@
+section.hero > article .contenu {
+	.card-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.card-list__item {
+			padding: 24px;
+			aspect-ratio: 1;
+			border-radius: 20px;
+			position: relative;
+			overflow: hidden;
+
+			@media (min-width: 768px) {
+				aspect-ratio: 304/113;
+
+				> * {
+					width: 60%;
+				}
+			}
+
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			h5 {
+				font-size: 20px;
+			}
+		}
+
+		.card-list__item.all-inclusive {
+			background-color: #d2e9fb;
+
+			&::after {
+				content: '';
+				width: 77%;
+				height: 43%;
+				background-image: url('/site/coral.ru/assets/1.jpg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				border-top-left-radius: 140px;
+			}
+		}
+
+		.card-list__item.adults-only {
+			background-color: #f2dfd5;
+
+			&::after {
+				content: '';
+				width: 77%;
+				height: 43%;
+				background-image: url('/site/coral.ru/assets/2.jpg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				border-top-left-radius: 140px;
+			}
+		}
+
+		.card-list__item.compact {
+			background-color: #f7eddb;
+
+			&::after {
+				content: '';
+				width: 77%;
+				height: 43%;
+				background-image: url('/site/coral.ru/assets/3.jpg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				border-top-left-radius: 140px;
+			}
+		}
+
+		.card-list__item.econom {
+			background-color: #d2e9fb;
+
+			&::after {
+				content: '';
+				width: 77%;
+				height: 43%;
+				background-image: url('/site/coral.ru/assets/4.jpg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				border-top-left-radius: 140px;
+			}
+		}
+
+		.card-list__item::after {
+			@media (min-width: 768px) {
+				height: 100% !important;
+				width: 40% !important;
+				border-top-left-radius: 140px !important;
+				border-bottom-left-radius: 45px !important;
+				background-size: cover !important;
+			}
+		}
+	}
+}

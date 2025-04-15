@@ -1,0 +1,53 @@
+@import '../../common/css/_regular-mixins.scss';
+
+section.brands > article .contenu {
+	.brands-list {
+		list-style: none;
+
+		@include flex-grid(16px, 1, center);
+
+		@media (min-width: 768px) {
+			@include flex-grid(16px, 2, center);
+		}
+
+		@media (min-width: 1024px) {
+			@include flex-grid(16px, 3, center);
+		}
+
+		.brands-list__item {
+			background: #fff;
+			padding: 24px;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			.headline {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				font-weight: 600;
+				color: #0092d0;
+				font-size: 20px;
+
+				.icon {
+					width: 48px;
+					height: 48px;
+					border-radius: 100%;
+					padding: 12px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: #c2e4f6;
+					flex-shrink: 0;
+				}
+			}
+		}
+
+		.brands-list__item:last-child {
+			@media (min-width: 768px) and (max-width: 1023px) {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+section.russian-tourist > article .contenu {
+	.visual {
+		aspect-ratio: 99/146;
+		position: relative;
+		max-height: 500px;
+		background-image: url(/site/coral.ru/assets/russian-girl-mob.jpg);
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: cover;
+		border-radius: 20px;
+		min-height: 584px;
+
+		@media (min-width: 768px) {
+			aspect-ratio: 608/605;
+			min-height: 505px;
+		}
+	}
+
+	.text {
+		width: calc(100% - 16px);
+		position: absolute;
+		bottom: 8px;
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: var(--radius-border_Radius_MD, 20px);
+		background: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(15px);
+		padding: 24px;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+}

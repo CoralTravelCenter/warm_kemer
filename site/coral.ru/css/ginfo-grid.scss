@@ -1,0 +1,48 @@
+@import '../../common/css/_regular-mixins.scss';
+
+section.grid-info > article .contenu {
+	.grid-info-wrapper {
+		@include flex-grid(16px, 1, center);
+
+		.grid-info-item {
+			background: #fff;
+			border-radius: 20px;
+			overflow: hidden;
+
+			@media (min-width: 1280px) {
+				display: flex;
+
+				> * {
+					width: 50%;
+				}
+			}
+
+			.visual {
+				@media (min-width: 1280px) {
+					position: relative;
+
+					img {
+						position: absolute;
+					}
+				}
+			}
+
+			.content {
+				padding: 24px;
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+
+				@media (min-width: 1280px) {
+					padding: 40px;
+				}
+			}
+		}
+
+		.grid-info-item.rev {
+			@media (min-width: 1280px) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}

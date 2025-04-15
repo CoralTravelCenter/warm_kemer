@@ -1,0 +1,40 @@
+lesection.slide-1 > article .contenu {
+	swiper-container {
+		&::part(pagination) {
+			position: relative;
+			margin-top: 20px;
+		}
+
+		&::part(bullet) {
+			width: 10px;
+			height: 10px;
+			background: #33c2ff4d;
+		}
+
+		&::part(bullet-active) {
+			width: 10px;
+			height: 10px;
+			background: #077dad;
+		}
+	}
+
+	swiper-slide {
+		background: #fff;
+		border-radius: 20px;
+		.visual {
+			height: 200px;
+
+			img {
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+			}
+		}
+
+		.content {
+			padding: 16px 24px 24px 24px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+	}
+}
